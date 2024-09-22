@@ -3,6 +3,7 @@ Projeyi kurmak için `.env.example` dosyasının adını `.env` olarak değişti
 
 ```
 composer install
+./vendor/bin/sail up // Docker kullanıyorsanız
 php artisan key:generate
 php artisan migrate --seed
 ```
