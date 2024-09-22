@@ -2,6 +2,7 @@
 Projeyi kurmak için `.env.example` dosyasının adını `.env` olarak değiştirin. Daha sonra sırasıyla aşağıdaki komutları çalıştırın.
 
 ```
+composer install
 php artisan key:generate
 php artisan migrate --seed
 ```
