@@ -26,11 +26,8 @@ class AssignTasks extends Command
     /**
      * Execute the console command.
      */
-    public function handle()
+    public function handle(TaskService $taskService, DeveloperService $developerService)
     {
-        $taskService = new TaskService();
-        $developerService = new DeveloperService();
-
         $tasks = $taskService->getUnassignedTasks();
         $developers = Developer::all();
 
